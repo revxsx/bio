@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'unbounded';
+    src: url('Unbounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    color: white;
+    font-family: unbounded, sans-serif;
+    cursor: url('files/arrow.cur'), auto;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0b2019;
+}
+
+a, button {
+    cursor: url('files/hand.cur'), pointer;
+}
+
+.Hi {
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.bio {
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background-color: #142f25;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #1c3d30;
+    transform: translateY(-2px);
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Переключатель языка */
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#language-btn {
+    background-color: #142f25;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#language-btn:hover {
+    background-color: #1c3d30;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
