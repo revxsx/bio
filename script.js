@@ -16,14 +16,13 @@ function setInitialLanguage() {
         hiText.textContent = 'Привет, я rev\\x';
         bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
         languageBtn.textContent = 'RU';
-        infoBtn.href = 'https://telegra.ph/YA-03-21-5'; // Ссылка для русского языка
+        infoBtn.href = 'https://telegra.ph/YA-03-21-5';
         return false;
-    } else {
-        // Устанавливаем английский язык
+    } else {
         hiText.textContent = 'Hi, I\'m rev\\x';
         bioText.textContent = 'trying to program, trying to get better / / /';
         languageBtn.textContent = 'EN';
-        infoBtn.href = 'https://telegra.ph/Im-03-21-3'; // Ссылка для английского языка
+        infoBtn.href = 'https://telegra.ph/Im-03-21-3';
         return true;
     }
 }
