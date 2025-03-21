@@ -29,7 +29,7 @@ a, button {
 .Hi {
     text-align: center;
     font-weight: 500;
-    font-size: 28px; /* Уменьшен размер шрифта для мобильных устройств */
+    font-size: 35px; /* Размер шрифта для десктопа */
     animation: fadeIn 0.5s ease forwards;
 }
 
@@ -37,20 +37,19 @@ a, button {
     text-align: center;
     width: 100%;
     animation: fadeIn 0.5s ease forwards;
-    font-size: 16px; /* Уменьшен размер шрифта для мобильных устройств */
+    font-size: 18px; /* Размер шрифта для десктопа */
 }
 
 .buttons {
     display: flex;
-    gap: 10px; /* Уменьшен промежуток между кнопками для мобильных устройств */
-    flex-direction: column; /* Кнопки будут расположены вертикально на мобильных устройствах */
+    gap: 20px; /* Промежуток между кнопками для десктопа */
 }
 
 .btn {
     position: relative;
     display: inline-block;
     background-color: #142f25;
-    padding: 10px 20px; /* Уменьшен padding для мобильных устройств */
+    padding: 12px 24px; /* Размер кнопок для десктопа */
     text-decoration: none;
     border-radius: 30px;
     font-size: 14px;
@@ -121,19 +120,20 @@ a, button {
 /* Медиа-запросы для адаптации под мобильные устройства */
 @media (max-width: 768px) {
     .Hi {
-        font-size: 24px; /* Еще меньше размер шрифта для маленьких экранов */
+        font-size: 28px; /* Уменьшен размер шрифта для мобильных устройств */
     }
 
     .bio {
-        font-size: 14px; /* Еще меньше размер шрифта для маленьких экранов */
+        font-size: 16px; /* Уменьшен размер шрифта для мобильных устройств */
     }
 
     .buttons {
-        gap: 5px; /* Еще меньше промежуток между кнопками */
+        flex-direction: column; /* Кнопки вертикально на мобильных устройствах */
+        gap: 10px; /* Уменьшен промежуток между кнопками */
     }
 
     .btn {
-        padding: 8px 16px; /* Еще меньше padding для кнопок */
+        padding: 10px 20px; /* Уменьшен padding для кнопок на мобильных устройствах */
     }
 
     .language-switcher {
