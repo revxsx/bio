@@ -1,3 +1,3 @@
-# bio-site
+# rev\x's bio
 
-gg
+I have weak programming skills, I coded it the best I could.
