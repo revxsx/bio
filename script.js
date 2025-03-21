@@ -42,8 +42,7 @@ languageBtn.addEventListener('click', () => {
             hiText.classList.remove('fade-in');
             bioText.classList.remove('fade-in');
             isAnimating = false;
+            isEnglish = !isEnglish; // Меняем состояние языка после завершения анимации
         }, { once: true });
     }, { once: true });
-
-    isEnglish = !isEnglish;
 });
