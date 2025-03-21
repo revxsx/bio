@@ -159,7 +159,7 @@ a, button {
 }
 
 .infobtn:hover {
-    background-color: #1c3d30; /* Цвет фона при наведении */
-    transform: translateY(-2px); /* Эффект поднятия кнопки */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+    background-color: #1c3d30;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
