@@ -31,7 +31,7 @@ languageBtn.addEventListener('click', () => {
     hiText.addEventListener('animationend', () => {
         hiText.textContent = translations[newLang].hi;
         bioText.textContent = translations[newLang].bio;
-        languageBtn.textContent = newLang;
+        languageBtn.textContent = translations[newLang].btn;
 
         hiText.classList.remove('fade-out');
         bioText.classList.remove('fade-out');
@@ -42,7 +42,8 @@ languageBtn.addEventListener('click', () => {
             hiText.classList.remove('fade-in');
             bioText.classList.remove('fade-in');
             isAnimating = false;
-            isEnglish = !isEnglish; // Меняем состояние языка после завершения анимации
         }, { once: true });
+
+        isEnglish = !isEnglish; // Меняем состояние языка после обновления текста
     }, { once: true });
 });
