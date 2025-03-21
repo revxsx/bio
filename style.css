@@ -143,3 +143,23 @@ a, button {
         padding: 6px 12px;
     }
 }
+
+.infobtn {
+    display: inline-block;
+    background-color: #142f25;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+}
+
+.infobtn:hover {
+    background-color: #1c3d30; /* Цвет фона при наведении */
+    transform: translateY(-2px); /* Эффект поднятия кнопки */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+}

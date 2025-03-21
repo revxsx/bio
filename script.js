@@ -3,7 +3,6 @@ function getBrowserLanguage() {
     return userLanguage.split('-')[0]; // Возвращаем только основную часть (например, "ru" вместо "ru-RU")
 }
 
-
 function setInitialLanguage() {
     const browserLanguage = getBrowserLanguage();
     const supportedLanguages = ['ru', 'be', 'kk', 'uk'];
@@ -11,66 +10,63 @@ function setInitialLanguage() {
     const hiText = document.querySelector('.Hi');
     const bioText = document.querySelector('.bio');
     const languageBtn = document.getElementById('language-btn');
+    const infoBtn = document.querySelector('.infobtn');
 
     if (supportedLanguages.includes(browserLanguage)) {
         // Устанавливаем русский язык
         hiText.textContent = 'Привет, я rev\\x';
         bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
         languageBtn.textContent = 'RU';
+        infoBtn.href = 'https://telegra.ph/YA-03-21-5'; // Ссылка для русского языка
         return false;
     } else {
-        
+        // Устанавливаем английский язык
         hiText.textContent = 'Hi, I\'m rev\\x';
         bioText.textContent = 'trying to program, trying to get better / / /';
         languageBtn.textContent = 'EN';
-        return true; 
+        infoBtn.href = 'https://telegra.ph/Im-03-21-3'; // Ссылка для английского языка
+        return true;
     }
 }
-
 
 const languageBtn = document.getElementById('language-btn');
 const hiText = document.querySelector('.Hi');
 const bioText = document.querySelector('.bio');
-
+const infoBtn = document.querySelector('.infobtn');
 
 let isEnglish = setInitialLanguage();
 
-
 languageBtn.addEventListener('click', () => {
-    
     hiText.classList.add('fade-out');
     bioText.classList.add('fade-out');
 
-    
     setTimeout(() => {
         if (isEnglish) {
-            
+            // Устанавливаем русский язык
             hiText.textContent = 'Привет, я rev\\x';
             bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
             languageBtn.textContent = 'RU';
+            infoBtn.href = 'https://telegra.ph/YA-03-21-5'; // Ссылка для русского языка
         } else {
-            
+            // Устанавливаем английский язык
             hiText.textContent = 'Hi, I\'m rev\\x';
             bioText.textContent = 'trying to program, trying to get better / / /';
             languageBtn.textContent = 'EN';
+            infoBtn.href = 'https://telegra.ph/Im-03-21-3'; // Ссылка для английского языка
         }
 
-        
         hiText.classList.remove('fade-out');
         bioText.classList.remove('fade-out');
 
-        
         hiText.style.animation = 'none';
         bioText.style.animation = 'none';
-        
+
         void hiText.offsetWidth;
         void bioText.offsetWidth;
 
-        
         hiText.style.animation = 'fadeIn 0.5s ease forwards';
         bioText.style.animation = 'fadeIn 0.5s ease forwards';
 
-        
         isEnglish = !isEnglish;
     }, 500);
 });
