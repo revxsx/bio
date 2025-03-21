@@ -88,8 +88,7 @@ a, button {
 #language-btn:hover {
     background-color: #1c3d30;
 }
-
-/* Анимации */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
