@@ -1,6 +1,6 @@
 function getBrowserLanguage() {
     const userLanguage = navigator.language || navigator.userLanguage;
-    return userLanguage.split('-')[0]; // Возвращаем только основную часть (например, "ru" вместо "ru-RU")
+    return userLanguage.split('-')[0];
 }
 
 function setInitialLanguage() {
@@ -12,8 +12,7 @@ function setInitialLanguage() {
     const languageBtn = document.getElementById('language-btn');
     const infoBtn = document.querySelector('.infobtn');
 
-    if (supportedLanguages.includes(browserLanguage)) {
-        // Устанавливаем русский язык
+    if (supportedLanguages.includes(browserLanguage)) {
         hiText.textContent = 'Привет, я rev\\x';
         bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
         languageBtn.textContent = 'RU';
@@ -41,18 +40,16 @@ languageBtn.addEventListener('click', () => {
     bioText.classList.add('fade-out');
 
     setTimeout(() => {
-        if (isEnglish) {
-            // Устанавливаем русский язык
+        if (isEnglish) {
             hiText.textContent = 'Привет, я rev\\x';
             bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
             languageBtn.textContent = 'RU';
-            infoBtn.href = 'https://telegra.ph/YA-03-21-5'; // Ссылка для русского языка
-        } else {
-            // Устанавливаем английский язык
+            infoBtn.href = 'https://telegra.ph/YA-03-21-5';
+        } else {
             hiText.textContent = 'Hi, I\'m rev\\x';
             bioText.textContent = 'trying to program, trying to get better / / /';
             languageBtn.textContent = 'EN';
-            infoBtn.href = 'https://telegra.ph/Im-03-21-3'; // Ссылка для английского языка
+            infoBtn.href = 'https://telegra.ph/Im-03-21-3';
         }
 
         hiText.classList.remove('fade-out');
