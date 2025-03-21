@@ -15,12 +15,12 @@ languageBtn.addEventListener('click', () => {
 
             hiText.textContent = 'Привет, я rev\\x';
             bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
-            languageBtn.textContent = 'en';
+            languageBtn.textContent = 'ru';
         } else {
 
             hiText.textContent = 'Hi, I\'m rev\\x';
             bioText.textContent = 'trying to program, trying to get better / / /';
-            languageBtn.textContent = 'ru';
+            languageBtn.textContent = 'en';
         }
 
         
