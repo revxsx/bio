@@ -81,5 +81,5 @@ document.addEventListener('cut', (event) => {
 
 document.addEventListener('contextmenu', (event) => {
     event.preventDefault();
-    alert('пiдарасiк')
+    alert('пiдарасiк');
 });
