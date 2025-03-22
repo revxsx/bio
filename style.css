@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     background-color: #0b2019;
     padding: 20px;
+    user-select: none;
 }
 
 a, button {
