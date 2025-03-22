@@ -57,6 +57,7 @@ a, button {
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin: 5px;
+    outline: none;
 }
 
 .btn:hover {
@@ -156,6 +157,7 @@ a, button {
     bottom: 20px;
     right: 20px;
     padding: 15px 25px;
+    outline: none;
 }
 
 .infobtn:hover {
