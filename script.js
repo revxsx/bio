@@ -79,7 +79,10 @@ document.addEventListener('cut', (event) => {
     event.preventDefault();
 });
 
-document.addEventListener('contextmenu', (event) => {
-    event.preventDefault();
-    alert('пiдарасiк');
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+        console.log('Правый клик заблокирован');
+        alert('пiдарасiк');
+    });
 });
