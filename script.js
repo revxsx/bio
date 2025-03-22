@@ -12,13 +12,15 @@ function setInitialLanguage() {
     const languageBtn = document.getElementById('language-btn');
     const infoBtn = document.querySelector('.infobtn');
 
-    if (supportedLanguages.includes(browserLanguage)) {
+    if (supportedLanguages.includes(browserLanguage)) {
+
         hiText.textContent = 'Привет, я rev\\x';
         bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
         languageBtn.textContent = 'RU';
         infoBtn.href = 'https://telegra.ph/YA-03-21-5';
         return false;
-    } else {
+    } else {
+
         hiText.textContent = 'Hi, I\'m rev\\x';
         bioText.textContent = 'trying to program, trying to get better / / /';
         languageBtn.textContent = 'EN';
@@ -39,12 +41,14 @@ languageBtn.addEventListener('click', () => {
     bioText.classList.add('fade-out');
 
     setTimeout(() => {
-        if (isEnglish) {
+        if (isEnglish) {
+
             hiText.textContent = 'Привет, я rev\\x';
             bioText.textContent = 'пытаюсь программировать, пытаюсь стать лучше / / /';
             languageBtn.textContent = 'RU';
             infoBtn.href = 'https://telegra.ph/YA-03-21-5';
-        } else {
+        } else {
+
             hiText.textContent = 'Hi, I\'m rev\\x';
             bioText.textContent = 'trying to program, trying to get better / / /';
             languageBtn.textContent = 'EN';
@@ -65,4 +69,16 @@ languageBtn.addEventListener('click', () => {
 
         isEnglish = !isEnglish;
     }, 500);
+});
+
+document.addEventListener('copy', (event) => {
+    event.preventDefault();
+});
+
+document.addEventListener('cut', (event) => {
+    event.preventDefault();
+});
+
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
 });
