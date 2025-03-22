@@ -9,6 +9,7 @@
     color: white;
     font-family: unbounded, sans-serif;
     cursor: url('files/arrow.cur'), auto;
+    user-select: none;
 }
 
 body {
