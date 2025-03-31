@@ -83,6 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('contextmenu', (event) => {
         event.preventDefault();
         console.log('Правый клик заблокирован');
-        alert('ПРИВЕТ, @komugitank');
+        alert('АЙ ХУЛИГАН, ХОТЕЛ ПРАВУЮ КНОПКУ НАЖАТЬ? НАЖАТИЕ ПРАВОЙ КНОПКИ ЗАПРЕЩЕНО ЗАКОНОМ УК РФ N1488');
     });
 });
