@@ -26,3 +26,22 @@
     font-size: 20px;
     opacity: 0.8;
 }
+
+.backbutton {
+    position: relative;
+    display: inline-block;
+    background-color: #142f25;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    outline: none;
+}
+.backbutton:hover {
+    background-color: #1c3d30;
+    transform: translateY(-2px);
+}
