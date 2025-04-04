@@ -1,0 +1,60 @@
+:root {
+    --dark-gray: #1A1A1A;
+    --graphite: #2C2C2C;
+    --asphalt: #4A4A4A;
+    --steel: #5D5D5D;
+    --light-smoke: #B0B0B0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Unbounded;
+    background-color: var(--dark-gray);
+    color: var(--light-smoke);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--light-smoke);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--graphite);
+    color: var(--light-smoke);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--asphalt);
+}
+
+.btn:hover {
+    background-color: var(--asphalt);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
